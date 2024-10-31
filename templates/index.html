@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reversed Akinator</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    
+</head>
+<body>
+    <div class="main">
+        <p class="disclaimer">Reversed Akinator uses Artificial Intelligence which can make mistakes.</p>
+        <h1>Reversed Akinator, with AI!</h1>
+        <p>Ask yes/no questions to identify the famous politician.</p>
+        <p class="secondp">Presidents, prime ministers, dead, alive, all included!</p>
+        <input type="text" id="question" placeholder="Type your question here..." autofocus>
+        <button id="ask-button" onclick="askQuestion()">Ask</button>
+        <div class="hidden" id="response"></div>
+
+        <div id="high-scores">
+            <h2 class="hs_headings">High Scores:</h2>
+            <div class="score-item" id="fastest-time">Fastest Time: {{ high_scores['fastest_time'] or 'Play first!' }}</div>
+            <div class="score-item" id="lowest-questions">Lowest Questions: {{ high_scores['lowest_questions'] or 'Play first!' }}</div>
+        </div>
+
+        <script src="/static/script.js"></script>
+    </div>
+</body>
+
+</html>
