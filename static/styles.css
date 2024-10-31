@@ -1,0 +1,133 @@
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(to bottom right, #87CEFA, #1E90FF);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.main{
+    background: white;
+    padding: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 15px;
+
+}
+h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+p {
+    color: #666;
+    margin: 0 0 20px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #0056b3;
+}
+#response {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+    max-height: 250px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.message {
+    margin: 5px 0;
+    padding: 5px;
+    font-size: 14px;
+}
+.user-question {
+    color: #555;
+    font-style: italic;
+}
+.bot-response {
+    color: #007BFF;
+}
+#high-scores {
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+.score-item {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #444;
+}
+@media (max-width: 480px) {
+    input, button, #response, #high-scores {
+        width: 100%;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+
+
+.secondp{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.hidden{
+    display: none;
+}
+
+.hs_headings{
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+#high-scores{
+    text-align: left;
+}
+
+.disclaimer {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);  /* Light text with 50% opacity */
+    margin-bottom: 10px;
+    text-align: center;
+}
